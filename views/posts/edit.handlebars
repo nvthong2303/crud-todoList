@@ -1,0 +1,17 @@
+<div class="">
+    <h1>chinh sua bai viet</h1>
+    <form action="/posts/{{post._id}}?_method=PUT" method="post">
+    <input type="hidden" name="_method" value="PUT">
+        <div class="">
+            <label for="title">title</label>
+            <input type="text" required name="title" value="{{post.title}}">
+        </div>
+
+        <div class="">
+            <label for="title">text</label>
+            <textarea name="text" required>{{post.text}}</textarea>
+        </div>
+
+        <button type='submit'>cap nhap</button>
+    </form>
+</div>

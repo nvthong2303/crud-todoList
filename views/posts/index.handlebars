@@ -1,0 +1,14 @@
+{{#each posts}}
+<div class="">
+    <h4>{{title}}</h4>
+    <p>{{text}}</p>
+    <a href="/posts/edit/{{_id}}">thay doi</a>
+    <form action="/posts/{{_id}}?_method=DELETE" method="post">
+        <input type="hidden" name="_method" value="DELETE">
+        <input type="submit" value="xoa">
+
+    </form>
+</div>
+{{else}}
+<p>chua co bai viet nao</p>
+{{/each}}
